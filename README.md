@@ -12,6 +12,6 @@ but for that I need to do more experimenting so not yet.
 
 I could also implement .pso to .wav conversion which is just renaming files.
 
-file info about PixelTale games:
-.pso -> .wav (audio files)
+file info about PixelTale games:<br>
+.pso -> .wav (audio files)<br>
 .pmt -> .dds (textures)
