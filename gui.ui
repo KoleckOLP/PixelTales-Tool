@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PixelTales Tool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>PXStudioEngine.ico</normaloff>PXStudioEngine.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #2c2c2c;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: #121212;</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="body">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="2">
+        <widget class="QPushButton" name="output_browse_button">
+         <property name="styleSheet">
+          <string notr="true">background-color: #383838; Color: #FFFFFF</string>
+         </property>
+         <property name="text">
+          <string>Browse</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="4">
+        <widget class="QTextBrowser" name="console"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="output_bar">
+         <property name="styleSheet">
+          <string notr="true">background-color: #383838; Border: None; Color: #FFFFFF;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="input_label">
+         <property name="styleSheet">
+          <string notr="true">Color: #FFFFFF</string>
+         </property>
+         <property name="text">
+          <string>Input:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="output_label">
+         <property name="styleSheet">
+          <string notr="true">Color: #FFFFFF</string>
+         </property>
+         <property name="text">
+          <string>Output:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="output_open_button">
+         <property name="styleSheet">
+          <string notr="true">background-color: #383838; Color: #FFFFFF</string>
+         </property>
+         <property name="text">
+          <string>Open</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="input_bar">
+         <property name="styleSheet">
+          <string notr="true">background-color: #383838; Border: None; Color: #FFFFFF;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="input_open_button">
+         <property name="styleSheet">
+          <string notr="true">background-color: #383838; Color: #FFFFFF</string>
+         </property>
+         <property name="text">
+          <string>Open</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="4">
+        <widget class="QGroupBox" name="old_games_group">
+         <property name="styleSheet">
+          <string notr="true">Color: #FFFFFF</string>
+         </property>
+         <property name="title">
+          <string>(Old) SS, SA, Springdale</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="2">
+           <widget class="QRadioButton" name="old_texture_export_radio">
+            <property name="text">
+             <string>Texture (PMT -&gt; DDS)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QRadioButton" name="old_audio_export_radio">
+            <property name="text">
+             <string>Audio (PSO -&gt; WAV)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QRadioButton" name="old_texture_import_radio">
+            <property name="text">
+             <string>Texture (DDS -&gt; PMT)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QRadioButton" name="old_audio_import_radio">
+            <property name="text">
+             <string>Audio (WAV -&gt; PSO)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="radioButton">
+            <property name="text">
+             <string>Data (CSA -&gt; Folder)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="radioButton_2">
+            <property name="text">
+             <string>Data (Folder -&gt; CSA)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="input_browse_button">
+         <property name="styleSheet">
+          <string notr="true">background-color: #383838; Color: #FFFFFF</string>
+         </property>
+         <property name="text">
+          <string>Browse</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="4">
+        <widget class="QGroupBox" name="online_group">
+         <property name="styleSheet">
+          <string notr="true">Color: #FFFFFF</string>
+         </property>
+         <property name="title">
+          <string>SSO</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="1" column="1">
+           <widget class="QRadioButton" name="online_texture_import_radio">
+            <property name="text">
+             <string>Texture (DDS -&gt; TGA)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QRadioButton" name="online_texture_export_radio">
+            <property name="text">
+             <string>Texture (TGA -&gt; DDS)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="radioButton_3">
+            <property name="text">
+             <string>Data (CSA + CSAheader -&gt; Folder)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QPushButton" name="run_sso_button">
+         <property name="styleSheet">
+          <string notr="true">background-color: #383838; Color: #FFFFFF</string>
+         </property>
+         <property name="text">
+          <string>Run SSO</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QLabel" name="credits_label">
+         <property name="styleSheet">
+          <string notr="true">Color: #FFFFFF</string>
+         </property>
+         <property name="text">
+          <string>Made by koleq (C) 2022. With special thanks to Prowl and Chucky.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="run_old_button">
+         <property name="styleSheet">
+          <string notr="true">background-color: #383838; Color: #FFFFFF</string>
+         </property>
+         <property name="text">
+          <string>Run Old</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
